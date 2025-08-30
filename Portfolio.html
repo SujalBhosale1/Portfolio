@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sujal Bhosale — Portfolio</title>
+  <meta name="description" content="Sujal Bhosale — Student, Web Dev, AI & Healthcare Startup Enthusiast" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; --panel:#0b1220; --muted:#9aa4b2; --accent:#7c5cff; --glass: rgba(255,255,255,0.04);
+      --radius:14px; --maxw:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,Arial; background:linear-gradient(180deg,#071028 0%, #071825 100%); color:#e6eef8; -webkit-font-smoothing:antialiased;
+      padding:40px 20px;
+      display:flex; justify-content:center;
+    }
+    .wrap{width:100%; max-width:var(--maxw)}
+
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#4cc9f0);display:flex;align-items:center;justify-content:center;font-weight:800;color:#071025}
+    .brand h1{margin:0;font-size:18px}
+    nav{display:flex;gap:12px}
+    nav a{color:var(--muted);text-decoration:none;padding:8px 12px;border-radius:10px}
+    nav a:hover{background:var(--glass);color:#fff}
+
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:center;margin-bottom:28px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:28px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+
+    .intro h2{margin:0 0 8px;font-size:28px}
+    .intro p{margin:0;color:var(--muted);line-height:1.6}
+    .meta{display:flex;gap:10px;margin-top:16px}
+    .pill{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:999px;color:var(--muted);font-weight:600}
+
+    .profile{display:flex;flex-direction:column;align-items:center;text-align:center}
+    .avatar{width:160px;height:160px;border-radius:18px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,0.6);margin-bottom:12px}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    .hlight{color:var(--accent);font-weight:700}
+
+    .sections{display:grid;grid-template-columns:1fr 360px;gap:28px}
+    .projects{display:grid;gap:14px}
+    .projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .proj{background:rgba(255,255,255,0.02);padding:14px;border-radius:12px}
+    .proj h3{margin:0 0 6px;font-size:16px}
+    .proj p{margin:0;color:var(--muted);font-size:13px}
+    .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .tag{font-size:12px;padding:6px 8px;border-radius:8px;background:rgba(255,255,255,0.03);color:var(--muted)}
+
+    aside .card{position:sticky;top:28px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#4cc9f0);color:#071025;font-weight:700;border:none;cursor:pointer;text-decoration:none}
+
+    footer{margin-top:28px;color:var(--muted);text-align:center;font-size:13px}
+
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .sections{grid-template-columns:1fr}
+      .projects-grid{grid-template-columns:1fr}
+    }
+    #achievements a {
+     color: white;          /* link color */
+      text-decoration: none; /* removes underline */
+    }
+
+    #achievements a:hover {
+    color: #00ffff;        /* hover effect (cyan glow look) */
+    text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">SB</div>
+        <div>
+          <h1>Sujal Bhosale</h1>
+          <div style="font-size:12px;color:var(--muted)">CS & Business Systems • JSPM Tathawade</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#social">Social</a>
+        <a href="#achievements">Achievements</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card intro">
+        <h2>Hi — I'm <span class="hlight">Sujal</span>, a 3rd-year CSBS student & web developer.</h2>
+        <p>I’m Sujal Bhosale, a Computer Science and Business Systems student from Pune with a strong foundation in C/C++ and web development. I enjoy building full-stack projects, crafting clean and responsive UIs, and exploring AI-driven tools and healthcare applications. With experience in multiple websites, an AI image generator, and a PyQt5 assistant, I’m passionate about problem-solving, innovation, and continuous learning.</p>
+        <div class="meta">
+          <div class="pill">• HTML <br>• CSS <br>• JavaScript</div>
+          <div class="pill">• Python <br>• MongoDB</div>
+          <div class="pill">• AI <br>• PyQt5 <br>• System Design</div>
+        </div>
+
+        <div style="margin-top:18px">
+          <h3 style="margin:0 0 8px">Quick links</h3>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn" href="#projects">View projects</a>
+          </div>
+        </div>
+      </div>
+
+      <aside class="card profile">
+        <div class="avatar">
+          <img src="myimg.jpg" alt="Avatar">
+        </div>        
+        <div style="font-weight:700">Sujal Bhosale</div>
+        <div style="font-size:13px;color:var(--muted);margin-bottom:12px"><br>Pune, India <br>• Born Jun 1, 2005</div>
+        <div style="font-size:13px;color:var(--muted);margin-bottom:10px">3rd year CSBS student at JSPM Tathawade</div>
+        <div style="display:flex;gap:8px">
+          <a class="pill">Currently Learning</a>
+        </div>
+      </aside>
+    </section>
+
+    <section class="sections">
+      <main>
+        <div id="projects" class="card projects">
+          <h2 style="margin-top:0">Selected projects</h2>
+          <div class="projects-grid" id="projectsGrid">
+            <article class="proj" data-tags="python,gui">
+              <h3>Voice-enabled Personal Assistant</h3>
+              <p>Desktop assistant built with Python + PyQt5 supporting speech recognition, TTS, and modular backends.</p>
+              <div class="tags"><span class="tag">Python</span><span class="tag">PyQt5</span></div>
+            </article>
+
+            <article class="proj" data-tags="ai,react">
+              <h3>AI Image Generator App</h3>
+              <p>React + Tailwind app integrating pollinations.ai for generating images on demand with a modern UI.</p>
+              <div class="tags"><span class="tag">React</span><span class="tag">Tailwind</span><span class="tag">AI</span></div>
+            </article>
+
+            <article class="proj" data-tags="database,web">
+              <h3>DBMS — Blood Donation Platform (Student Project)</h3>
+              <p>Database-driven project using MongoDB to manage donors, recipients and blood requests; frontend built with modern HTML/CSS/JS.</p>
+              <div class="tags"><span class="tag">MongoDB</span><span class="tag">Node.js</span></div>
+            </article>
+          </div>
+        </div>
+
+        <div id="about" class="card" style="margin-top:14px">
+          <h2>About</h2>
+          <p style="color:var(--muted)">I’m Sujal Bhosale, a Computer Science and Business Systems student at JSPM’s Rajarshi Shahu College of Engineering, Pune. With a strong foundation in C and C++ programming, I have a deep interest in problem-solving and efficient coding practices. I’ve worked on multiple projects, including portfolio websites, an AI image generator app, and a PyQt5 personal assistant, while continuously refining my skills in full-stack web development and responsive UI design. My recent focus is on advanced frontend development, AI-driven tools, and healthcare applications. Beyond academics and coding, I enjoy trekking, traveling, and reading books, which keep me curious and motivated. I live in Pune with my family of four—my parents, my brother, and myself. Always eager to learn, innovate, and collaborate, I aim to build impactful solutions that blend technology with real-world needs.</p>
+          <ul style="color:var(--muted);margin-top:10px">
+            <li>Experience: multiple website projects, AI image app, PyQt5 assistant</li>
+            <li>Focus: frontend excellence, clean UI, responsive design</li>
+            <li>Looking for: internships, collaborators in healthcare & AI</li>
+          </ul>
+        </div>
+      </main>
+
+      <aside>
+        <!-- Social Links -->
+        <div class="card" id="social">
+          <h3>Connect with me</h3>
+          <p style="color:var(--muted)">You can reach me directly through:</p>
+          <ul style="list-style:none;padding:0;margin:0;color:var(--muted)">
+            <li>📱 Phone: <a href="tel:+91XXXXXXXXXX" style="color:#fff;text-decoration:none">+91 76204 36971</a></li>
+            <li>📸 Instagram: <a href="https://www.instagram.com/sujal_.bhosale/" target="_blank" style="color:#fff;text-decoration:none">@sujal_.bhosale</a></li>
+            <li>📘 Facebook: <a href="https://www.facebook.com/profile.php?id=100091828894162" target="_blank" style="color:#fff;text-decoration:none">@SujalBhosale</a></li>
+          </ul>
+        </div>
+
+        <!-- Achievements -->
+        <div class="card" id="achievements" style="margin-top:14px">
+          <h3>Achievements & Certifications</h3>
+          <ul style="color:var(--muted);margin-top:10px;margin-top:10px; list-style-type: disc;">
+            <li><a href="https://drive.google.com/file/d/1KOQRMy0sgASIEPoWOqwl_PfGV1i6O4yL/view?usp=sharing" target="_blank">Microsoft Azure Internship</a></li>
+            <li><a href="https://drive.google.com/file/d/1-YM-g6EVhAPl1HIQvr7JL-FXJ2YbcKo6/view?usp=sharing" target="_blank">Artificial Intelligence Fundamentals (IBM SkillBuild)</a></li>
+            <li><a href="https://drive.google.com/file/d/1g0DbPChenzIPnlwYyfv_S5cLca8y5eyn/view?usp=sharing" target="_blank">NPTEL Enhancing Soft Skills and Personality</a></li>
+            <li><a href="https://drive.google.com/file/d/1FgrbR4q973ZUKlhe3jQIWZGJaSzzmyWr/view?usp=sharing" target="_blank">TCS iON Career Edge - Young Professional</a></li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+  </div>
+</body>
+</html>
